@@ -2,8 +2,12 @@
 Base Flask App with Login Feature
 
 ## How to use
-First, git clone into your project. Now you are ready to create your `config.ini` by running the following script:
+First, git clone into your project and install dependencies using pip:
+```
+pip install -r requirements.txt
+```
 
+Now you are ready to create your `config.ini` by running the following script:
 ```
 import configparser
 config = configparser.ConfigParser()
