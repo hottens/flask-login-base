@@ -4,8 +4,6 @@ from . import db
 
 main = Blueprint('main', __name__)
 
-title = 'Power Progress'
-
 @main.route('/')
 def index():
     return render_template('index.html')
@@ -18,5 +16,5 @@ def profile():
 @main.context_processor
 def utility_processor():
     def get_title():
-        return "Power Progress"
+        return 'Your title here'
     return dict(get_title=get_title)
